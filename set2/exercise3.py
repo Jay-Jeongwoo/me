@@ -56,10 +56,9 @@ def loops_1c(number_of_items=5, symbol="#"):
     string with exacly one symbol in it.
     E.g.: ['#', '#', '#', '#', '#']
     """
-    my_list = []
-    for i in range(number_of_items):
-        my_list.append(symbol)
-        return my_list
+    my_list = [symbol for i in range(number_of_items)]
+    print(my_list)
+    return my_list
 
 
 def loops_2():
