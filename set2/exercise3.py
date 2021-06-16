@@ -111,7 +111,7 @@ def loops_3():
     for i in range(10):
         number_row = []
         for j in range(10):
-            number_row.append(str(i))
+            number_row.append(str(i + 1))
             number_square.append(number_row)
 
     return number_square
