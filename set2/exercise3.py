@@ -231,7 +231,18 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    return None
+    pyr = []
+
+    for x in range(5):
+        pr_row = []
+        for y in range(9):
+            if abs(y-4) <= x:
+                pr_row.append("*")
+            else:
+                pr_row.append(" ")
+        pyr.append(pr_row)
+
+    return pyr
 
 
 def little_printer(some_kind_of_list, exercise_name):
