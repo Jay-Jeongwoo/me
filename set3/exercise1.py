@@ -107,6 +107,7 @@ def super_asker(low, high):
     my_number = random.randint(low, high)
     done = False
     print(my_number)
+    
     while not done:
         try:
             guess = int(input())

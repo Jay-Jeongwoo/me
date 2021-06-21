@@ -3,7 +3,7 @@ TODO: Reflect on what you learned this week and what is still unclear.
 **My Jounal**
 
 _exercise 1_
-loop_ranger: still wondering how i can generate this without using range().
+loop_ranger: still wondering how i can generate this without using range function. 
 
 lone_ranger: As usual, started with empty list and then append i, which have been assigned the range.
 
