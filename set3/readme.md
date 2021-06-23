@@ -3,7 +3,7 @@ TODO: Reflect on what you learned this week and what is still unclear.
 **My Jounal**
 
 _exercise 1_
-loop_ranger: still wondering how i can generate this without using range function. 
+loop_ranger: still wondering how i can generate this without using range function.
 
 lone_ranger: As usual, started with empty list and then append i, which have been assigned the range.
 
@@ -15,7 +15,7 @@ not_number_rejector: still working on this def. Although I didn't use try and ca
 
 super_asker: Finally, I could use try and except for this question. Following the guideline, I combined the strategy that I had used for this exercise. I imported random and used while loop. However, I still get a result that says invaild value, which means I have a error in value. Therefore, still have to look at this one.
 
-_exercise 2_
+_exercise 2_: I've written some notes on the exercise2.py.
 
 _exercise 3_
 
