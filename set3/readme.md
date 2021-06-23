@@ -17,6 +17,6 @@ super_asker: Finally, I could use try and except for this question. Following th
 
 _exercise 2_: I've written some notes on the exercise2.py.
 
-_exercise 3_
+_exercise 3_: I will be back to this exercise to generate detailed questions.
 
 _exercise 4_
