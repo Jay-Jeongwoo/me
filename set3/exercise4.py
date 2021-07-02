@@ -31,7 +31,7 @@ def binary_search(low, high, actual_number):
     
     range(low, high+1)
     search = True
-    while search == True:
+    while search is True:
         guess = round((high + low)/2)
         if guess == actual_number:
             print(guess)
