@@ -52,13 +52,17 @@ def dictionary_please() -> dict:
 
 def is_it_5(some_number) -> bool:
     """Returns True if the argument passed is 5, otherwise returns False."""
-    well_is_it = None
-    return well_is_it
+    if some_number is 5:
+        well_is_it = True
+        return well_is_it
+    else:
+        return False
 
 
 def take_five(some_number) -> int:
     """Subtracts 5 from some_number."""
-    return None
+    sub = some_number - 5
+    return sub
 
 
 def greet(name="Towering Timmy") -> str:
@@ -67,7 +71,8 @@ def greet(name="Towering Timmy") -> str:
     E.g. if given as "Towering Timmy" it should
          return "Well hello, Towering Timmy"
     """
-    return None
+    say_hi = "Well hello, " + str(name)
+    return say_hi
 
 
 def one_counter(input_list=[1, 4, 1, 5, 1, 1]) -> int:
@@ -75,18 +80,18 @@ def one_counter(input_list=[1, 4, 1, 5, 1, 1]) -> int:
     Return an integer.
     TIP: the test will use a different input_list, so don't just return 2
     """
-    count = None
 
-    return count
+    input_list.count(1)
+    return input_list.count(1)
 
 
 def n_counter(search_for_this, input_list=[1, 4, 1, 5, 1, 1]) -> int:
     """Count the number of times search_for_this shows up in the input_list.
     Return an integer.
     """
-    count = None
 
-    return count
+    input_list.count(search_for_this)
+    return input_list.count(search_for_this)
 
 
 def fizz_buzz() -> List:
@@ -109,9 +114,24 @@ def fizz_buzz() -> List:
     """
     fizz_buzz_list = []
     # your code here
-
+    for i in range(1, 101):
+        fizz_buzz_list.append(i)
+        if i % 3 == 0 and i % 5 == 0:
+            fizz_buzz_list.remove(i)
+            fizz_buzz_list.append("FizzBuzz")
+            continue
+        elif i % 3 == 0:
+            fizz_buzz_list.remove(i)
+            fizz_buzz_list.append("Fizz")
+            continue
+        elif i % 5 == 0:
+            fizz_buzz_list.remove(i)
+            fizz_buzz_list.append("Buzz")
+            continue
+        else:
+            print(i)
+            
     return fizz_buzz_list
-
 
 def set_it_on_fire(input_string="very naughty boy") -> str:
     """Interleave the input_string with the 🔥 emoji.
@@ -124,6 +144,8 @@ def set_it_on_fire(input_string="very naughty boy") -> str:
     TIP: consider using the 'join' method in Python.
     TIP: make sure that you have a 🔥 on both ends of the string.
     """
+
+    fire = print("\N{fire}")
 
     return None
 
@@ -143,7 +165,11 @@ def pet_filter(letter="a") -> List:
     ]
     # fmt: on
     filtered = []
-
+    for s in pets:
+        if letter in s:
+            filtered.append(s)
+        else:
+            continue
     return filtered
 
 
