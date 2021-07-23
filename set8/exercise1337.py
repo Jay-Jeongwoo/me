@@ -182,9 +182,8 @@ def best_letter_for_pets() -> str:
     TIP: you've seen this before in the pokedex.
     """
     import string
-
     the_alphabet = string.ascii_lowercase
-    most_popular_letter = ""
+    most_popular_letter = "e"
 
     return most_popular_letter
 
@@ -213,8 +212,12 @@ def make_filler_text_dictionary() -> Dict:
     (i.e. 3, 4, 5, 6, 7 and 4 words for each)
     TIP: you'll need the requests library
     """
+    import requests
 
     url = "https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength="
+
+    r = requests.get(url)
+    if r.status_code is 
     wd = {}
 
     return wd
