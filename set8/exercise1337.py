@@ -217,7 +217,7 @@ def make_filler_text_dictionary() -> Dict:
     url = "https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength="
 
     r = requests.get(url)
-    if r.status_code is 
+    # if r.status_code is 
     wd = {}
 
     return wd
